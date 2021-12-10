@@ -1,13 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomeView } from "../views/home/HomeView";
-import { MoviesView } from "../views/movies/MoviesView";
-import { DisplayDataView } from "../views/displaydata/DisplayDataView";
-import { QuizAPI } from "../api/QuizAPI";
-import RoutingPath from "./RoutingPath";
 import { useContext } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { QuizAPI } from "../api/QuizAPI";
 import { UserContext } from "../shared/provider/UserProvider";
-import { BlackJackView } from "../views/blackjack/BlackJackView";
+import HighScore from "../views/quiz/HighScore";
 import StartView from "../views/quiz/StartView";
+import RoutingPath from "./RoutingPath";
 
 export const Router = ({ children }) => {
   const [authenticateUser, setAuthenticateUser] = useContext(UserContext);
@@ -17,14 +14,8 @@ export const Router = ({ children }) => {
       {/* <span>Username: {authenticateUser}</span> */}
       <Routes>
         <Route path={RoutingPath.startView} element={<StartView />} />
-        <Route path={RoutingPath.homeView} element={<HomeView />} />
-        <Route path={RoutingPath.moviesView} element={<MoviesView />} />
-        <Route
-          path={RoutingPath.DisplayDataView}
-          element={<DisplayDataView />}
-        />
         <Route path={RoutingPath.QuizAPI} element={<QuizAPI />} />
-        <Route path={RoutingPath.BlackJackView} element={<BlackJackView />} />
+        <Route path={RoutingPath.HighScore} element={<HighScore />} />
       </Routes>
     </BrowserRouter>
   );

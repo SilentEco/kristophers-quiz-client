@@ -1,15 +1,9 @@
-const startView = "/";
-const homeView = "/home";
-const moviesView = "/movies";
-const DisplayDataView = "/API";
+const startView = "/StartQuiz";
 const QuizAPI = "/QuizAPI";
-const BlackJackView = "/blackjack";
+const HighScore = "/Highscore";
 
 export default {
   startView,
-  homeView,
-  moviesView,
-  DisplayDataView,
   QuizAPI,
-  BlackJackView,
+  HighScore,
 };

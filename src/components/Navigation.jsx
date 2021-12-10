@@ -6,11 +6,7 @@ export const Navigation = () => {
   const navigate = useNavigate();
   return (
     <NavigationWrapper>
-      <Nav onClick={() => navigate(RoutingPath.homeView)}>Home</Nav>
-      <Nav onClick={() => navigate(RoutingPath.moviesView)}>Movies</Nav>
-      <Nav onClick={() => navigate(RoutingPath.DisplayDataView)}>API</Nav>
-      <Nav onClick={() => navigate(RoutingPath.QuizAPI)}>QUIZ</Nav>
-      <Nav onClick={() => navigate(RoutingPath.BlackJackView)}>Black Jack</Nav>
+      <Nav onClick={() => navigate(RoutingPath.startView)}>QUIZ</Nav>
     </NavigationWrapper>
   );
 };

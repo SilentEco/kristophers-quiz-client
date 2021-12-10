@@ -84,9 +84,12 @@ export const QuizAPI = () => {
 
   const sendScoreWhenQuizEnd = async () => {
     try {
-      await axios.put(`http://localhost:5000/scores/${user}`, {
-        points: score,
-      });
+      await axios.put(
+        `https://kristophers-quiz.herokuapp.com//scores/${user}`,
+        {
+          points: score,
+        }
+      );
     } catch (err) {
       console.error(err.message);
     }

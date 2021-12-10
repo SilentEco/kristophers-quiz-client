@@ -10,7 +10,7 @@ const InputName = () => {
 
   const onSubmitForm = async (e) => {
     try {
-      await fetch("https://kristophers-quiz.herokuapp.com/name", {
+      await fetch("https://kristophers-quiz-server.herokuapp.com/name", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: user }),

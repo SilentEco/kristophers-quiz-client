@@ -15,7 +15,7 @@ export const quizQuestions = [
     correctAnwser: "1997",
   },
   {
-    question: "Vilken historisk händelse skedde den 20 juli 1969",
+    question: "Vilken historisk händelse skedde den 20 juli 1969?",
     questionAlternatives: [
       "Apollo 11 landade på månen",
       "Internet",
@@ -122,7 +122,7 @@ export const quizQuestions = [
     correctAnwser: "Kina",
   },
   {
-    question: "Hur många färger finns det i regnbågen?",
+    question: "Hur många färger finns det i en regnbåge?",
     questionAlternatives: ["6", "7", "8", "9"],
     correctAnwser: "7",
   },

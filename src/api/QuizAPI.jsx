@@ -52,10 +52,10 @@ export const QuizAPI = () => {
     return (
       <>
         <h3>Poäng: {score} </h3>
-        <h2>
+        <h3>
           Fråga {currentQuestion + 1} av {quizQuestions.length}
-        </h2>
-        <h1>{quizQuestions[currentQuestion].question}</h1>
+        </h3>
+        <h2>{quizQuestions[currentQuestion].question}</h2>
         <br />
         {quizQuestions[currentQuestion].questionAlternatives.map(
           (anwser, index) => (

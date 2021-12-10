@@ -28,8 +28,8 @@ const InputName = () => {
   console.log(user);
   return (
     <Fragment>
-      <h1>QUIZ</h1>
-      <h2>Ange namn</h2>
+      <h1>VÄLKOMMEN TILL QUIZET</h1>
+      <h2>Ange ditt namn</h2>
       <form onSubmit={onSubmitForm}>
         <input
           type="text"
@@ -39,8 +39,6 @@ const InputName = () => {
         />
         <button onClick={() => handleClick()}>START</button>
       </form>
-
-      <p>_______________________________</p>
     </Fragment>
   );
 };

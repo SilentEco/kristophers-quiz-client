@@ -36,7 +36,7 @@ export const QuizAPI = () => {
             nextQuestion();
           }}
         >
-          NEXT QUESTION
+          Nästa fråga
         </NextQuestionButton>
       )
     );
@@ -51,7 +51,7 @@ export const QuizAPI = () => {
   const displayQuiz = () => {
     return (
       <>
-        <h3>Current Score: {score} </h3>
+        <h3>Poäng: {score} </h3>
         <h2>
           Fråga {currentQuestion + 1} av {quizQuestions.length}
         </h2>
@@ -104,9 +104,11 @@ export const QuizAPI = () => {
     return (
       <>
         <h1>
-          Good job {user}! Your score is: {score}
+          Bra jobbat {user}! Din poäng blev: {score}
         </h1>
-        <button onClick={() => resetQuiz()}>Restart</button>
+        <h5>Du kan nu stänga ner webbsidan säkert</h5>
+        <h5>Din poäng har sparats</h5>
+        {/* <button onClick={() => resetQuiz()}>Restart</button> */}
       </>
     );
   };

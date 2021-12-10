@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 
     p {
         animation: ${fadeIn} 50ms ease-in ;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
 `;

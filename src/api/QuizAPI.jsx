@@ -151,10 +151,17 @@ const QuizWrapper = styled.div`
 
 const NextQuestionButton = styled.button`
   width: 150px;
-  height: 75px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 5px;
 `;
 
 const AnswerOptions = styled.h1`
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 12px;
   background-color: ${(props) =>
     props.isCorrect && props.hasAnswered ? "green;" : "yellow;"};
   background-color: ${(props) =>

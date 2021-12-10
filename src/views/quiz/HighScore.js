@@ -25,7 +25,6 @@ const HighScore = () => {
   if (!loading) {
     return (
       <>
-        <p>index: {serverResponse.data.lenght}</p>
         <h2>name: {serverResponse?.data[6].name}</h2>
         <h1>Points: {serverResponse.data[6].points}</h1>;
       </>
